@@ -2,11 +2,16 @@ import "./globals.css";
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import Script from "next/script";
+import image from "@/assets/images/banban.png"
 export const metadata = {
   title:{
     default:"Muhammad Qammar"
   },
-  description:"Full Stack Web App Developer"
+  description:"Full Stack Web App Developer",
+  image: {
+    url: {image},
+    alt: "og-image",
+  },
 }
 export default function RootLayout({ children }) {
   return (

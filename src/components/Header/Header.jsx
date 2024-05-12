@@ -134,32 +134,35 @@ const Header = () => {
           <Link
             href="https://www.linkedin.com/in/muhammad-qamar-915b75125/"
             target="_blank"
-            className="text-white mx-2"
+            className="text-white mx-2 tooltip"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
+            <span className="tooltiptext">Linkedin</span>
           </Link>
           <Link
             href="https://www.youtube.com/@muhammadqamar7133"
             target="_blank"
-            className="text-white mx-2"
+            className="text-white mx-2 tooltip"
           >
             <FontAwesomeIcon
               icon={faYoutube}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
+            <span className="tooltiptext">Youtube</span>
           </Link>
           <Link
             href="https://www.instagram.com/muhammad.qammar/?hl=en"
             target="_blank"
-            className="text-white mx-2"
+            className="text-white mx-2 tooltip"
           >
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
+            <span className="tooltiptext">Instagram</span>
           </Link>
         </div>
 

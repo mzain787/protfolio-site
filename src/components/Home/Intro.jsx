@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import "./Home.css"
 import videobck from "../../assets/images/main-video.png"
@@ -8,6 +9,7 @@ import Hirebtn from '../Childcomps/Hirebtn';
 import Startups from '../Childcomps/Startups';
 import AosAnimation from '@/utils/AosAnimation';
 import Image from 'next/image';
+import VideoPlayer from '../Childcomps/ProfileModal/ProfileModal';
 const Intro = () => {
   return (
     <>
@@ -25,12 +27,12 @@ const Intro = () => {
      </div>
     </div>
     <div className="intro-bottom">
-        <div className="intro-video-back-img w-full h-auto">
             <AosAnimation type="zoom-in">
-            <Image src={videobck} alt="video-thumbnail"/>
+            {/* <Image src={videobck} alt="video-thumbnail"/> */}
+    <iframe src="https://www.youtube.com/embed/Z54UYSc1-4c" width="100%" height="500"/>
+
             </AosAnimation>
-            <a href="/" className="video-play-iocn w-12 h-12 rounded-full bg-orange-300"><FontAwesomeIcon className='absolute translate-x-4 translate-y-3 text-2xl' icon={faPlay} /></a>
-        </div>
+            {/* <a href="/" className="video-play-iocn w-12 h-12 rounded-full bg-orange-300"><FontAwesomeIcon className='absolute translate-x-4 translate-y-3 text-2xl' icon={faPlay} /></a> */}
     </div>
     </section>
     </> 

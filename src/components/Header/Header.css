@@ -35,6 +35,32 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: orange;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+ .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 @media (max-width: 992px) {
   .social-media {
     display: none;
