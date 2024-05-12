@@ -1,0 +1,428 @@
+.shake-horizontal {
+	animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+ @keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+.shake-vertical {
+	animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.bounce-top {
+	animation: bounce-top 2s both;
+}
+.bounce-in-top {
+	animation: bounce-in-top 2s both;
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(6.4px);
+  }
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+ @keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+ @keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+
+
+/* Hero Section CSS */
+.components-main-heading {
+  font-size: 64px;
+  line-height: 64px;
+  font-family: "Syne", sans-serif;
+}
+.hero-section {
+  padding: 160px 40px 50px 80px;
+}
+.hero-items {
+  overflow: -moz-hidden-unscrollable;
+  background-color: #1a1826;
+  width: 90%;
+  padding: 60px;
+}
+.hero-heading {
+  font-size: 70px;
+  line-height: 70px;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+}
+.hero-content {
+  width: 70%;
+}
+.hr-line {
+  border: 1px solid black;
+  margin: 40px 0px;
+}
+.hero-image {
+  position: absolute;
+  width: 30%;
+  top: 200px;
+  right: 100px;
+}
+.achievement .numbers {
+  font-family: "Syne", sans-serif;
+}
+/* Intro-Section CSS */
+.basic-padding {
+  padding: 80px;
+}
+.intro-video-back-img {
+  position: relative;
+}
+.intro-video-back-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); 
+  z-index: 1;
+}
+.video-play-iocn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* MySkill CSS */
+.myskill {
+  width: 30%;
+}
+.skill-heading {
+  font-size: 28px;
+  font-family: "Syne", sans-serif;
+}
+.skill-no {
+  font-size: 44px;
+  font-family: "Syne", sans-serif;
+}
+/* Journey CSS */
+.my-experience-journey {
+  background-color: #100f15;
+  padding: 80px 80px 0px 100px;
+}
+.journey-image {
+  width: 30%;
+}
+.journey-content {
+  width: 60%;
+}
+/* Experience CSS */
+.myexperience {
+  width: 30%;
+}
+.exp-year {
+  border: 2px solid rgb(250, 213, 145);
+  font-family: "Syne", sans-serif;
+}
+.journey-line {
+  border: 2px solid gray;
+}
+.job-title {
+  font-size: 21px;
+  font-family: "Syne", sans-serif;
+}
+/* Testimonials CSS */
+.clients-section-left {
+  width: 70%;
+}
+.clients-section-right {
+  width: 30%;
+}
+.standard p {
+  font-family: "Syne", sans-serif;
+}
+.standard h3 {
+  font-family: "Syne", sans-serif;
+}
+/* Testimonial CSS */
+.testimonial {
+  background-color: #100f15;
+}
+/* Projects CSS */
+.heading-part {
+  width: 38%;
+}
+/* Project CSS */
+.project-info {
+  width: 60%;
+}
+.project-image {
+  padding: 15px;
+  width: 40%;
+  background-color: #1a1826;
+}
+.hero-startups img {
+  width: 80%;
+}
+@media (max-width: 1280px) {
+  /* Hero Section */
+  .hero-section {
+    padding: 120px 30px 50px 100px;
+  }
+  .myexperience {
+    width: 50%;
+  }
+  /* Projects CSS */
+  .heading-part {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .components-main-heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  /* Hero Section */
+  .hero-image {
+    top: 500px;
+    right: 50px;
+  }
+  .basic-padding {
+    padding: 60px;
+  }
+  /* MySkill CSS */
+  .skill-heading {
+    font-size: 21px;
+  }
+  .myskill {
+    width: 40%;
+  }
+  /* Journey CSS */
+  .my-experience-journey {
+    padding: 60px 60px 0px 100px;
+  }
+  .journey-main {
+    flex-wrap: wrap;
+  }
+  .journey-content {
+    width: 100%;
+  }
+  .journey-image {
+    width: 60%;
+  }
+  /* Testimonials CSS */
+  .client-testimonials {
+    flex-direction: column;
+  }
+  .clients-section-left {
+    width: 100%;
+  }
+  .clients-section-right {
+    width: 100%;
+  }
+  /* Projects CSS */
+  .heading-part {
+    width: 100%;
+  }
+  /* Project CSS */
+  .project-info {
+    width: 50%;
+  }
+  .project-image {
+    padding: 10px;
+    width: 50%;
+    background-color: #1a1826;
+  }
+  .hero-startups img {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .components-main-heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  /* Hero Section */
+  .hero-section {
+    padding: 120px 30px 50px 30px;
+  }
+  .hero-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  /* Intro Section CSS */
+  .basic-padding {
+    padding: 20px;
+  }
+  .intro-top {
+    flex-direction: column;
+  }
+  .intro-heading {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .my-experience-journey {
+    padding: 20px 20px 0px 20px;
+  }
+  /* Experience CSS */
+  .job-title {
+    font-size: 18px;
+  }
+  /* Project CSS */
+  .our-project {
+    flex-direction: column;
+  }
+  .project-info {
+    width: 100%;
+  }
+  .project-image {
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  /* Hero Section */
+  .hero-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .hero-section {
+    background-color: #1a1826;
+    padding: 100px 20px 40px 20px;
+  }
+  .hero-items {
+    width: 100%;
+    padding: 0px;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-image {
+    position: relative;
+    top: 30px;
+    width: 60%;
+    margin: auto;
+    right: 0;
+  }
+  .upwork-fiverr {
+    padding-left: 0px;
+  }
+  /* Myskill CSS */
+  .myskill {
+    width: 100%;
+  }
+  .myexperience {
+    width: 100%;
+  }
+  /* Testimonial CSS */
+  .testimonial {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,30 @@
+.my-accordion {
+    width: 100%;/* Adjust as needed */
+  }
+  
+  details {
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  summary {
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #1A1826;
+  }
+  
+  summary span {
+    display: inline-block;
+  }
+  
+  details[open] summary {
+    background-color: #1A1826;
+  }
+  
+  p {
+    padding: 8px;
+    margin: 0;
+  }
+  

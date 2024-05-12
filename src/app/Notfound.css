@@ -1,0 +1,39 @@
+.not-found-page h2{
+    font-family: "Syne", sans-serif;
+    font-size: 70px;
+  }
+  .not-found-page .description{
+    width: 50%;
+    text-align: center;
+  }
+  
+  .not-found-image{
+  width: 60%;
+  }
+  @media (max-width:992px) {
+    .not-found-page .description{
+        width: 80%;
+        text-align: center;
+      }
+      
+      .not-found-image{
+      width: 70%;
+      }
+  }
+  @media (max-width:768px) {
+    .not-found-page{
+        padding: 100px 20px 0px 20px;
+    }
+    .not-found-page .description{
+        width: 100%;
+        text-align: center;
+      }
+      
+      .not-found-image{
+      width: 100%;
+      }
+      .not-found-page h2{
+        font-family: "Syne", sans-serif;
+        font-size: 36px;
+      }
+  }
