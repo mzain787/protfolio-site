@@ -79,9 +79,9 @@ const Footer = () => {
         </div>
         <div className="footer-bottom flex justify-between items-center">
           <div className="footer-bottom-left flex gap-4 items-center">
-            <a href="/">
+            {/* <a href="/">
               <Image src={logo} alt="logo-img" className="h-12 w-32" />
-            </a>
+            </a> */}
             <p className="copyright text-purple-400">
               © 2024 {" "}
               <span className="text-orange-300">QA Enterprise</span>

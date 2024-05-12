@@ -79,10 +79,10 @@ const Hero = () => {
               </div>
               <div className="achievement">
                 <p className="text-4xl font-bold text-purple-200 mb-3 tracking-wider numbers">
-                  6+
+                  6-7
                 </p>
                 <p className="text-purple-400 text-base font-medium">
-                  Years Experience
+                  Years of Experience
                 </p>
               </div>
               <div className="achievement">

@@ -18,7 +18,7 @@ const Homepage = () => {
     <Hero/>
     <Intro/>
     <Skills/>
-    <Journey/>
+    {/* <Journey/> */}
     <AosAnimation type='flip-left'>
     <Testimonials/>
     </AosAnimation>

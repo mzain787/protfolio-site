@@ -6,7 +6,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import {
-  faCaretDown,
+  // faCaretDown,
   faBars,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
@@ -32,14 +32,12 @@ const Header = () => {
 
     const handleOutsideClick = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
-        // Click outside the menu, close it
         setMenuOpen(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("click", handleOutsideClick);
 
-    // Cleanup the event listeners on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("click", handleOutsideClick);
@@ -52,7 +50,7 @@ const Header = () => {
   const closeMenu = () => {
     setMenuOpen(false);
   };
-  // Array of links with href and name properties
+
   const links = [
     { href: "/", name: "HOMEPAGE" },
     { href: "/about", name: "ABOUT ME" },
@@ -73,14 +71,14 @@ const Header = () => {
           scrolled ? "back-color" : ""
         }`}
       >
-        {/* Left side with logo and options */}
         <div className="flex items-center">
-          <a href="/">
-            <Image
+          <a href="/" className="mr-8 pl-4 w-32 cursor-pointer text-orange-200 text-3xl font-extrabold">
+            {/* <Image
               src={logo}
               alt="image"
               className="h-12 w-32 mr-8 pl-4 cursor-pointer"
-            />
+            /> */}
+            MQ
           </a>
           <nav
             ref={menuRef}
