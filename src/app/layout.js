@@ -2,12 +2,11 @@ import "./globals.css";
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import Script from "next/script";
-import ogImage from "@/assets/images/og-image.png"
 export const metadata = {
   title:"Muhammad Qammar",
   description:"Senior Full Stack Web App Developer - Portfolio showcasing my skills and projects.",
   image: {
-    url: "https://ibb.co/SQMzQnM",
+    url: "https://res.cloudinary.com/dwmwpmrpo/image/upload/v1715537404/kujq84sorusmcsz10qto.png",
     alt: "og-image",
   },
 }
