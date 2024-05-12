@@ -7,7 +7,7 @@ export const metadata = {
   title:"Muhammad Qammar",
   description:"Senior Full Stack Web App Developer - Portfolio showcasing my skills and projects.",
   image: {
-    url: "@/assets/images/og-image.png",
+    url: {ogImage},
     alt: "og-image",
   },
 }
