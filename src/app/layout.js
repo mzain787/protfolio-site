@@ -4,12 +4,10 @@ import Footer from "../components/Footer/Footer"
 import Script from "next/script";
 import ogImage from "@/assets/images/og-image.png"
 export const metadata = {
-  title:{
-    default:"Muhammad Qammar"
-  },
-  description:"Full Stack Web App Developer",
+  title:"Muhammad Qammar",
+  description:"Senior Full Stack Web App Developer - Portfolio showcasing my skills and projects.",
   image: {
-    url: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+    url: "@/assets/images/og-image.png",
     alt: "og-image",
   },
 }
